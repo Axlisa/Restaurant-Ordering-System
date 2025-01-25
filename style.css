@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff8dc; /* Light mode background color */
+}
+
+ul.navbar li {
+    float: left;
+}
+
+ul.navbar li.right {
+    float: right;
+}
+
+ul.navbar li a, ul.navbar li button {
+    display: block;
+    color: #8b6914; /* Light mode button text color */
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul.navbar li a:hover:not(.active), ul.navbar li button:hover {
+    background-color: #cdaa7d; /* Light mode button hover background color */
+    color: #fff; /* Light mode button hover text color */
+}
+
+ul.navbar li a.active {
+    background-color: #deb887; /* Light mode active button background color */
+    color: #fff; /* Light mode active button text color */
+}
+
+.container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff8dc; /* Light mode container background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #8b6914; /* Light mode header text color */
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #deb887; /* Light mode button background color */
+    color: #fff; /* Light mode button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #cdaa7d; /* Light mode button hover background color */
+}
+
+input[type="text"],
+input[type="number"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #deb887; /* Light mode submit button background color */
+    color: #fff; /* Light mode submit button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #cdaa7d; /* Light mode submit button hover background color */
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #161414; 
+    color: #e9e8ea;
+}
+
+body.dark-mode ul.navbar {
+    background-color: #232121;
+}
+
+body.dark-mode ul.navbar li a, body.dark-mode ul.navbar li button {
+    color: #e9e8ea;
+}
+
+body.dark-mode ul.navbar li a:hover:not(.active), body.dark-mode ul.navbar li button:hover {
+    background-color: #1f1c1c;
+    color: #fff;
+}
+
+body.dark-mode ul.navbar li a.active {
+    background-color: #f23269;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #232121;
+}
+
+body.dark-mode h1 {
+    color: #e9e8ea;
+}
+
+body.dark-mode .button {
+    background-color: #f23269;
+    color: #fff;
+}
+
+body.dark-mode .button:hover {
+    background-color: #e9e8ea;
+}
+
+body.dark-mode input[type="submit"] {
+    background-color: #f23269;
+    color: #fff;
+}
+
+body.dark-mode input[type="submit"]:hover {
+    background-color: #e9e8ea;
+}
+
+.order-saved-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+}
